@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Closeli Design Documentation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendor-css/gallery-style.css" />
+    <link rel="stylesheet" href="vendor-css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo-d.png" />
+    <!-- to display favicon on Safari -->
+    <link
+      rel="mask-icon"
+      href="{{assets/logo-d.png}}/images/safari-pinned-tab.svg?v=M44lzPylqQ"
+      color="#fff"
+    />
+    <link rel="apple-touch-icon" href="assets/logo-d.png" />
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="logo-container">
+          <a href="#" class="logo-btn">
+            <img src="assets/logo-d.png" alt="Dan Liu logo" class="logo-img" />
+            <p class="logo-text">Dan Liu</p>
+          </a>
+        </div>
+        <div class="nav-mobile">
+          <a id="navbar-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-web">
+          <li>
+            <a lang="en" href="#" class="nav-lnk">Home</a>
+          </li>
+          <li>
+            <a
+              lang="en"
+              target="_blank"
+              href="https://buttery-harbor-e12.notion.site/Work-samples-0eea4d3d432c4f83b764357fa5b60c1d"
+              class="nav-lnk"
+              >Work Examples</a
+            >
+          </li>
+          <li>
+            <a
+              lang="en"
+              target="_blank"
+              href="https://drive.google.com/file/d/1WbbF2nAH9c74a4PFwAM89M8ZANXAYqUl/view?usp=sharing"
+              class="nav-lnk"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="assets/prototype-collage.jpg"
+        alt="Prototype collage of Closeli mobile app"
+        class="full-bleed-img"
+      />
+    </header>
+
+    <main>
+      <!-- Intro of Closeli -->
+      <section class="intro-container">
+        <div class="row">
+          <div class="app-name-container one-fourth-col">
+            <h1 class="app-name">
+              <span class="baby-blue">Clo</span>
+              <span class="baby-pink">se</span>
+              <span class="baby-yellow">li</span>
+            </h1>
+          </div>
+          <div class="one-fourth-col">
+            <h2 class="intro-title">Duration</h2>
+            <p class="intro-duration intro-description">Jan 2021 - May 2021</p>
+          </div>
+          <div class="one-fourth-col">
+            <h2 class="intro-title">Project Context</h2>
+            <p class="intro-context intro-description">UX Class</p>
+          </div>
+          <div class="one-fourth-col tools-col">
+            <h2 class="intro-title">Tools Used</h2>
+            <p class="intro-tools intro-description">Figma</p>
+            <p class="intro-description">Photoshop</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-fourth-col"></div>
+          <div class="three-fourth-col roles-col">
+            <h2 class="intro-title">Roles</h2>
+            <p class="intro-roles intro-description">
+              UX Design: Wireframes, Hi-fi prototype
+            </p>
+            <p class="intro-description">
+              Research: 1-1 User interviews, Affinity mapping, Competitive
+              analysis, Feature inventory
+            </p>
+          </div>
+        </div>
+        <div class="row work-process-row">
+          <img src="assets/work-process.svg" alt="Work process" />
+        </div>
+      </section>
+
+      <section class="overview-container bg-light-blue">
+        <div class="row">
+          <div class="one-fourth-col">
+            <h2>Overview</h2>
+          </div>
+          <div class="three-fourth-col">
+            <div class="problem-container">
+              <h3 class="bold">Problem</h3>
+              <p>
+                Due to the pandemic, working from home (WFH) has become a norm
+                for most of the office workers and students. The remote working
+                style significantly impacted our lifestyles, social
+                relationships and productivity in many different ways. Some
+                people consider it a positive change given that it offers
+                benefits like less commuting, more time with family and flexible
+                scheduling, while the others feel overwhelmed by extended
+                working hours, reduced social interaction, worsened health and
+                lower productivity. For this project, I want to understand
+                office workers' and students' overall WFH experience and see how
+                I can improve it.
+              </p>
+            </div>
+
+            <div class="solution-container">
+              <h3 class="bold">Solution</h3>
+              <p>
+                My solution to this problem is an app called Closeli that
+                encourages neighbors and friends within the same community to
+                socialize together with safety measures. The app provides
+                opportunities for people who long for in-person social
+                activities to effortlessly connect with others and take breaks
+                from work.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row prototype-overview-row">
+          <div class="one-third-col">
+            <img
+              src="assets/prototype/calendar-screen.png"
+              alt="Calendar prototype screen"
+            />
+          </div>
+          <div class="one-third-col">
+            <img
+              src="assets/prototype/find-friends-screen.png"
+              alt="Find Friends prototype screen"
+            />
+          </div>
+          <div class="one-third-col">
+            <img
+              src="assets/prototype/meetup-screen.png"
+              alt="Meetup prototype screen"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="generative-research-container">
+        <div class="row highlight-question-container">
+          <p class="highlight-question">
+            How can we improve people's
+            <span class="neon-blue medium">work from home</span> experience?
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="one-seventh-col">
+            <h2>Generative Research</h2>
+            <p>WFH Experience</p>
+          </div>
+          <div class="two-third-col">
+            <div class="row">
+              <div class="one-second-col background-container">
+                <h3>Background</h3>
+                <p>
+                  This research study is to understand people's WFH experience
+                  and how we can improve it.
+                </p>
+              </div>
+              <div class="one-second-col goals-container">
+                <h3>Goals</h3>
+                <p>
+                  Understand people's work from home schedule, experience, work
+                  life balance and health status compared to working in the
+                  office / on campus, and discover potential issues caused by
+                  working from home.
+                </p>
+              </div>
+            </div>
+            <div class="row interview-questions-container">
+              <h3>Sample Interview Questions</h3>
+              <ul>
+                <li class="list-style-none">
+                  <p>
+                    Please describe a normal workday and weekend working from
+                    home. (Ask the following questions according to
+                    interviewees' response to the first question.)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    How does working from home change your social life
+                    positively and negatively?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    How does working from home impact your health positively and
+                    negatively?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    How does working from home change your work positively and
+                    negatively?
+                  </p>
+                </li>
+                <li><p>What would be an ideal schedule for you?</p></li>
+                <li><p>What goals do you have?</p></li>
+                <li><p>What do you do to achieve your goals?</p></li>
+              </ul>
+            </div>
+            <div class="row methodology-container">
+              <h3>Methodology</h3>
+              <p>
+                This will be an 1:1 interview consisting of 8 participants. The
+                participants should be selected from a diverse background in
+                order to get a comprehensive understanding. Each participant
+                session will last 30 minutes. Interviews will occur over Zoom.
+                The interviews will be recorded if the participants consent.
+              </p>
+            </div>
+            <div class="row participant-screening-container">
+              <h3>Participant Screening</h3>
+              <ul class="flex-full-width">
+                <li><p>Age range: 15 - 65.</p></li>
+                <li>
+                  <p>Currently or formerly working/studying from home.</p>
+                </li>
+                <li><p>Current or former student or worker.</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <section class="interview-outcome-container">
+          <div class="row">
+            <h3 class="bold">Interview Outcome</h3>
+          </div>
+          <div class="row interview-outcome-container">
+            <div class="three-fifth-col interview-outcome-text">
+              <div class="row interview-outcome-img">
+                <img
+                  src="assets/interview-result-demographic.svg"
+                  alt="I interviewed 8 interviewees in total. 3 of them were full-time students, 3 of them were full-time students with part-time jobs, 1 of them were full-time students with full-time jobs, and 1 of them were working full-time"
+                />
+              </div>
+              <div class="row interview-reflection-container">
+                <h4>Interview Reflection</h4>
+                <p>
+                  I conducted 1-1 interviews with 8 people in 3 weeks. At the
+                  beginning, I interviewed with close friends and took notes
+                  using my computer. I realized that the information I gained
+                  from close friends had a lot of bias. For example, some of my
+                  close friends focused on impacts that are solely negative or
+                  positive and easily made the assumption that I already knew
+                  most of the context when they answered my questions. So I
+                  intentionally interviewed people I wasn't close with later.
+                  Additionally, in later interviews, I wrote down some key
+                  points in my notebook instead of typing the entire
+                  conversation later because I realized that taking notes on my
+                  computer made the conversation choppy and unnatural.
+                </p>
+              </div>
+              <div class="row interview-reflection-footnote">
+                <p class="light">
+                  * Interview notes were processed to protect privacy of
+                  participants. There are around 30 pages of interview notes. I
+                  only display a selection of them here.
+                </p>
+              </div>
+            </div>
+            <div class="two-fifth-col">
+              <h4>Sample Interview Notes</h4>
+
+              <!-- add a slideshow gallery of notes. Code written by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery -->
+              <div class="container">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                  <img
+                    src="assets/interview-notes/interview-note-5.jpg"
+                    alt="interview note 5"
+                  />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                  <img
+                    src="assets/interview-notes/interview-note-6.jpg"
+                    alt="interview note 6"
+                  />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                  <img
+                    src="assets/interview-notes/interview-note-8.jpg"
+                    alt="interview note 8"
+                  />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                  <img
+                    src="assets/interview-notes/interview-note-9.jpg"
+                    alt="interview note 9"
+                  />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                  <img
+                    src="assets/interview-notes/interview-note-16.jpg"
+                    alt="interview note 16"
+                  />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 6</div>
+                  <img
+                    src="assets/interview-notes/interview-note-24.jpg"
+                    alt="interview note 24"
+                  />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"></a>
+                <a class="next" onclick="plusSlides(1)"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="affinity-maps-container">
+            <div class="row">
+              <h4>Affinity Maps Analysis</h4>
+            </div>
+            <div class="row">
+              <div class="one-second-col">
+                <img
+                  src="assets/affinity-map/affinity-map_ungrouped.jpg"
+                  alt="Affinity map ungrouped"
+                />
+              </div>
+              <div class="one-second-col">
+                <img
+                  src="assets/affinity-map/affinity-map_grouped.jpg"
+                  alt="Affinity Map grouped"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <img
+                src="assets/affinity-map/affinity-map_analyzed.png"
+                alt="Affinity map analyzed"
+              />
+            </div>
+            <div class="row">
+              <p>
+                From the affinity maps, we can summarize 4 key points:
+                <span class="bold"
+                  >need a better schedule; need reasons to do things; miss
+                  outdoor and exercise; miss in-person social interaction</span
+                >. Seeing these needs, I wondered how a design solution could
+                address them. So I changed my How Might We statemnt to..
+              </p>
+            </div>
+            <div class="row highlight-question-container">
+              <p class="highlight-question">
+                How can we improve people's
+                <span class="neon-blue medium">in-person social</span>
+                experiences when working from home?
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="brainstorm-container bg-light-blue">
+        <div class="row">
+          <div class="one-seventh-col">
+            <h2>Brainstorm</h2>
+          </div>
+          <div class="two-third-col">
+            <div class="row">
+              <img src="assets/storyline.svg" alt="Brainstorm story line" />
+            </div>
+            <div class="row brainstorm-note">
+              <p>
+                Understanding that many of my interviewees have schedules that
+                are <span class="bold">tiring</span> and
+                <span class="bold">unhealthy</span>, I thought
+                <span class="bold">taking short breaks</span> would be helpful
+                for their <span class="bold">health</span> and
+                <span class="bold">productivity</span>. In order to give them a
+                <span class="bold">reason</span> to take breaks, I thought
+                <span class="bold">in-person social interaction</span> would be
+                encouraging and fun. While socializing with others, why not step
+                <span class="bold">outside</span> and do some
+                <span class="bold">exercise</span>?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="generative-research-in-person-container">
+        <div class="row">
+          <div class="one-seventh-col">
+            <h2>Generative Research</h2>
+            <p>Social Experience</p>
+          </div>
+          <div class="two-third-col">
+            <div class="row">
+              <p>
+                In order to understand how to improve in-person social
+                experiences, I followed up with some interviewees and asked
+                about their social preference. Here is a summary of the findings
+                from these conversations:
+              </p>
+            </div>
+            <ul class="row findings-container">
+              <li class="row finding-social-distance">
+                <h3 class="neon-blue bold">
+                  Prefer to stay in the neighborhood for activities during short
+                  breaks.
+                </h3>
+                <p>
+                  Most of the interviewees only have a limited amount of time to
+                  take breaks in between work, so they usually stay close to
+                  home.
+                </p>
+              </li>
+              <li class="row finding-social-preference">
+                <h3 class="neon-blue bold">Social preferences change.</h3>
+                <p>
+                  Some interviewees mentioned that their social preferences
+                  change. Sometimes they prefer to be alone, but other times
+                  they prefer to have company. Interviewees also mentinoed that
+                  they don't have close relationships with their neighbors, but
+                  that they would like to get to know them better when they are
+                  in a mood to meet new people. Sometimes they just want to
+                  socialize with friends.
+                </p>
+              </li>
+              <li class="row finding-safety-concern">
+                <h3 class="neon-blue bold">Safety Concern.</h3>
+                <p>
+                  Interviewees mentioned that some of their neighbors don't wear
+                  masks. Safety concern like this can discourage them from
+                  building relationships with new people.
+                </p>
+              </li>
+              <li class="row finding-social-difficulties">
+                <h3 class="neon-blue bold">
+                  Difficulty socializing with others.
+                </h3>
+                <p>
+                  Interviewees mentioned some difficulty socializing with
+                  others, including finding people with similar interests,
+                  finding common topics and organically scheduling meetups.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="competitive-analysis-container bg-light-blue">
+        <div class="row">
+          <div class="one-seventh-col">
+            <h2>Competitive Analysis</h2>
+          </div>
+          <div class="two-third-col">
+            <div class="row">
+              <p>
+                In order to offer a smooth user experience, I analyzed social
+                networking apps like <span class="bold">Bumble</span>,
+                <span class="bold">Hinge</span> and
+                <span class="bold">Nextdoor</span> and share ride apps like
+                <span class="bold">Uber</span> and
+                <span class="bold">Lyft</span>. Using this analysis, I adopted
+                some of the features and designs offered by these platforms.
+                Here is a brief summary of the features I adopted:
+              </p>
+            </div>
+            <ul class="row features-container">
+              <li class="row feature-house-rules">
+                <h3 class="dark-orange bold">House rules.</h3>
+                <p class="flex-full-width">
+                  Set up rules users must follow to participate in the
+                  community.
+                </p>
+              </li>
+              <li class="row feature-profiles">
+                <h3 class="dark-orange bold">Customized profiles.</h3>
+                <p>
+                  Give users flexibility to set up profiles and use this
+                  information to find friends with similar interests.
+                </p>
+              </li>
+              <li class="row feature-safety">
+                <h3 class="dark-orange bold">Safety features.</h3>
+                <p class="flex-full-width">
+                  Offer tools such as emergency contacts and a reporting system
+                  to ensure users' safety.
+                </p>
+              </li>
+              <li class="row feature-geolocation">
+                <h3 class="dark-orange bold">Geolocation features</h3>
+                <p class="flex-full-width">
+                  Provide location and time estimate service to boost the meetup
+                  experience.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="draft-design-container">
+        <div class="row draft-design-title">
+          <h2>Initial Design</h2>
+        </div>
+        <div class="row user-flow-container flex-wrap">
+          <h3>Design Ideation</h3>
+          <p>
+            After understanding users' needs and necessary features to include,
+            I came up with my first iteration of the design. For this iteration,
+            I tried to make the user flow as linear and straightforward as
+            possible to offer clear guidance for potential users, especially
+            users who aren't tech-savvy. Under this approach, I also offered
+            flexibility for users to hide private information, opt out of data
+            syncing and skip questions because I believe that users should have
+            the choices to protect their data privacy and remain silent for
+            information that they don't feel comfortable with sharing.
+          </p>
+        </div>
+        <div class="row user-flow-container flex-wrap">
+          <h3>1st Time User Flow</h3>
+          <img src="assets/user-flow.svg" alt="First Time User Flow" />
+        </div>
+        <div class="row wireframes-container flex-wrap">
+          <div class="row">
+            <h3>Wireframes</h3>
+          </div>
+          <div class="row wireframes-profile flex-wrap">
+            <div class="row wireframe-title">
+              <h4 class="medium dark-green">Setup profile</h4>
+            </div>
+            <div class="row">
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/house-rules.png"
+                  alt="House rule wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/name-profile.png"
+                  alt="Name profile wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/birthdate-profile.png"
+                  alt="Birthdate profile wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/occupation-profile.png"
+                  alt="occupation profile wireframe"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row wireframes-preference flex-wrap">
+            <div class="row wireframe-title">
+              <h4 class="medium dark-pink">Preference settings</h4>
+            </div>
+            <div class="row">
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/neighborhood.png"
+                  alt="Define neighborhood wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/social-preference-1.png"
+                  alt="Social preference 1 wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/social-preference-2.png"
+                  alt="Social preference 2 wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/social-preference-3.png"
+                  alt="Social preference 3 wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/activity-preference.png"
+                  alt="Activity preference wireframe"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row wireframes-generate-schedule flex-wrap">
+            <div class="row wireframe-title">
+              <h4 class="medium dark-blue">Generate schedule</h4>
+            </div>
+            <div class="row">
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/sync-contacts.png"
+                  alt="Generate schedule wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/add-friends.png"
+                  alt="Add friends wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/sync-schedule.png"
+                  alt="Sync schedule wireframe"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row wireframes-review-schedule flex-wrap">
+            <div class="row wireframe-title">
+              <h4 class="medium yellow-green">Review schedule</h4>
+            </div>
+            <div class="row">
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/review-schedule.png"
+                  alt="Review schedule wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/find-new-friend.png"
+                  alt="Replace meetup person wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/new-schedule.png"
+                  alt="New schedule wireframe"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row wireframes-socialize flex-wrap">
+            <div class="row wireframe-title">
+              <h4 class="medium dark-red">Take breaks & socialize</h4>
+            </div>
+            <div class="row">
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/notification.png"
+                  alt="notification wireframe"
+                />
+              </div>
+              <div class="one-fifth-col">
+                <img
+                  src="assets/wireframes/meetup.png"
+                  alt="Meetup wireframe"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testing-container bg-light-blue">
+        <div class="row">
+          <div class="one-seventh-col">
+            <h2>Testing</h2>
+          </div>
+          <div class="two-third-col">
+            <div class="row">
+              <p>
+                I tested the wireframe with a
+                <span class="bold">classmate</span> and my
+                <span class="bold">instructor</span> Here is a brief summary of
+                their feedback:
+              </p>
+            </div>
+            <ul class="row testing-findings-container flex-wrap">
+              <li class="testing-finding">
+                <p>
+                  Feels safe and welcomed because of the house rules and
+                  well-considered instructions.
+                </p>
+              </li>
+              <li class="testing-finding">
+                <p>Clean and beautiful user interface.</p>
+              </li>
+              <li class="testing-finding flex-full-width">
+                <p>The reminder to follow CDC guidelines is helpful.</p>
+              </li>
+              <li class="testing-finding">
+                <p>
+                  Ask for location permission after showing users more what the
+                  app is about because users may feel more comrfotable to share
+                  their location in this way.
+                </p>
+              </li>
+              <li class="testing-finding">
+                <p>Profile set-up is too long.</p>
+              </li>
+              <li class="testing-finding">
+                <p>
+                  A messaging system where users can communicate with others
+                  before meeting up would be helpful.
+                </p>
+              </li>
+              <li class="testing-finding">
+                <p>It may not be comfortable to share exact location</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-design-container">
+        <div class="row final-design-title">
+          <h2>Final Design</h2>
+        </div>
+        <div class="row final-design-ideation-container flex-wrap">
+          <h3>Design Ideation</h3>
+          <ul>
+            <li class="list-style-none">
+              <p>
+                After hearing testers' feedback and doing more researches, I
+                proposed some changes to the branding, user flow, interface
+                styles, and instructions to make the product more accessible,
+                user-friendly and inclusive. Here are the changes I proposed:
+              </p>
+            </li>
+            <li>
+              <p>
+                Changed the brand name from "Neighborly" to "Closeli" because
+                the trademark "Neighborly" has been taken by other products on
+                the app store.
+              </p>
+            </li>
+            <li>
+              <p>
+                Reorganize the profile set-up and preference set-up screens to
+                make this process more efficient and less overwhelming.
+              </p>
+            </li>
+            <li>
+              <p>
+                Moved the location request screen after preference set-up
+                screens to give users more context of the product.
+              </p>
+            </li>
+            <li>
+              <p>
+                Changed interface colors to make it more gender-neutral,
+                inclusive, and accessible.
+              </p>
+            </li>
+            <li>
+              <p>
+                Reworded some of the instructions to make them less lengthy and
+                more perceivable for users.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="row prototypes-container flex-wrap">
+          <div class="row flex-wrap prototype-title">
+            <h3>Final Prototypes</h3>
+          </div>
+          <div class="row prototype-intro flex-wrap flex-full-width">
+            <p>
+              Interactive prototype:
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/IoQUrKobyYWOTMpSh5Qa2v/Untitled?page-id=0%3A1&node-id=11%3A0&viewport=488%2C-385%2C0.14097477495670319&scaling=scale-down"
+                ><span class="baby-blue bold">Clo</span
+                ><span class="baby-pink bold">se</span
+                ><span class="baby-yellow bold">li</span> Figma Prototype
+                link</a
+              >
+            </p>
+          </div>
+          <div class="row prototypes flex-wrap">
+            <div class="row">
+              <div class="one-fifth-col">
+                <video
+                  controls="controls"
+                  src="assets/prototype-video/profile.mov"
+                  name="Setup profile prototype video"
+                  autoplay="autoplay"
+                  loop
+                  muted
+                ></video>
+                <h4 class="medium dark-green">Setup profile</h4>
+              </div>
+              <div class="one-fifth-col">
+                <video
+                  controls="controls"
+                  src="assets/prototype-video/preference.mov"
+                  name="Preference prototype video"
+                  autoplay="autoplay"
+                  loop
+                  muted
+                ></video>
+                <h4 class="medium dark-pink">Preference settings</h4>
+              </div>
+              <div class="one-fifth-col">
+                <video
+                  controls="controls"
+                  src="assets/prototype-video/sync.mov"
+                  name="Syncing prototype video"
+                  autoplay="autoplay"
+                  loop
+                  muted
+                ></video>
+                <h4 class="medium dark-blue">Generate schedule</h4>
+              </div>
+              <div class="one-fifth-col">
+                <video
+                  controls="controls"
+                  src="assets/prototype-video/reviewSchedule.mov"
+                  name="Review schedule prototype video"
+                  autoplay="autoplay"
+                  loop
+                  muted
+                ></video>
+                <h4 class="medium yellow-green">Review schedule</h4>
+              </div>
+              <div class="one-fifth-col">
+                <video
+                  controls="controls"
+                  src="assets/prototype-video/notification.mov"
+                  name="Notification prototype video"
+                  autoplay="autoplay"
+                  loop
+                  muted
+                ></video>
+                <h4 class="medium dark-red">Take breaks & socialize</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/dan-liu-b44b1610a/"
+            class="footer-icon"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="mailto: dali2731@colorado.edu" class="footer-icon"
+            ><ion-icon name="mail-outline"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="tel:+7205441260" class="footer-icon"
+            ><ion-icon name="call-outline"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="light">Made with love by Dan Liu © 2021</p>
+    </footer>
+
+    <aside class="feedback-container">
+      <a href="mailto: dali2731@colorado.edu">
+        <p>
+          This website is currently undergoing updates to improve accessibility
+          and ensure a high-quality project showcase. If you have any feedback
+          or questions about the website, please click on this banner to email
+          me.
+        </p>
+      </a>
+    </aside>
+
+    <!-- ion-icon package -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
