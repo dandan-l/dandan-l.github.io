@@ -23,6 +23,7 @@ body {
   font-size: 20px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .clearfix {
@@ -105,9 +106,13 @@ li {
   list-style: none;
 }
 /* ----- TEXTS ----- */
+.chinese {
+  font-family: "Noto Sans SC", sans-serif;
+}
 h1 {
   font-weight: 800;
   font-size: 260%;
+  text-align: center;
 }
 
 h2 {
@@ -141,6 +146,12 @@ p {
 }
 
 /* ----- LINKS ----- */
+a {
+  color: #2a2a2a;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
 a:not(.logo-btn):link,
 a:not(.logo-btn):visited {
   color: #2a2a2a;
@@ -219,12 +230,67 @@ a:not(.logo-btn):hover::after {
 }
 
 /* ----------------------------------------------- */
+/* SPECIAL EFFECT */
+/* ----------------------------------------------- */
+
+/* ----- TYPERWRITER EFFECT ----- */
+/* credit: https://css-tricks.com/snippets/css/typewriter-effect/ */
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+  display: block;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 5px solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  -webkit-animation: typing 3.5s steps(40, end),
+    blink-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
-a {
-  color: #2a2a2a;
-  text-decoration: none;
-}
 
 header .navbar {
   padding: 30px 80px;
@@ -237,6 +303,14 @@ header .navbar {
   display: inline-block;
   list-style: none;
   margin-left: 50px;
+}
+
+.nav-web li.active a {
+  color: #384bf7;
+}
+
+.nav-web li.active a:after {
+  display: none;
 }
 
 .logo-btn {
@@ -260,8 +334,163 @@ header .navbar {
   width: 100%;
 }
 
+/* Breadcrump example code from: https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html */
+nav.breadcrumb {
+  padding: 20px 80px;
+  /* border: 1px solid hsl(0, 0%, 90%); */
+  border-radius: 4px;
+  background: #e9f4fd;
+}
+
+nav.breadcrumb ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+nav.breadcrumb li {
+  display: inline;
+}
+
+nav.breadcrumb li + li::before {
+  display: inline-block;
+  margin: 0 0.25em;
+  transform: rotate(15deg);
+  border-right: 1.5px solid currentColor;
+  height: 15px;
+  content: "";
+  color: rgb(161, 161, 161);
+}
+
+nav.breadcrumb a {
+  font-weight: 200;
+  font-size: 90%;
+  color: #2a2a2a;
+}
+
+nav.breadcrumb [aria-current="page"] {
+  color: #384bf7;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: default;
+}
+
+nav.breadcrumb [aria-current="page"]:after {
+  display: none;
+}
+
 /* ----------------------------------------------- */
-/* MAIN */
+/* HOME - MAIN */
+/* ----------------------------------------------- */
+/* ----- video-header-section ----- */
+/* .home-page-movie {
+  width: 100%;
+}
+
+.home-page-movie video {
+  display: block;
+  margin: 0 auto;
+} */
+
+.bio-logo img {
+  width: 8%;
+}
+/* 
+.bio-intro-container {
+  margin-top: 50px;
+} */
+
+.bio-intro {
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+}
+
+.work-container .one-second-col:not(:last-of-type) {
+  margin-right: 80px;
+}
+
+.bio-intro li:not(:last-of-type) {
+  margin-bottom: 36px;
+}
+
+.bio-h1-container {
+  display: flex;
+  justify-content: center;
+}
+
+.work-container h2 {
+  margin-bottom: 36px;
+}
+
+a.project-snippet-btn::after {
+  display: none;
+}
+
+.project-snippet li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.project-snippet h3 {
+  margin-bottom: 0;
+  display: inline;
+}
+
+.divider {
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  margin: 0 14px;
+  background-color: rgb(161, 161, 161);
+}
+
+li p.project-year {
+  font-size: 75% !important;
+  margin-bottom: 16px;
+  display: inline;
+}
+
+.project-snippet li p {
+  line-height: 24px;
+  font-size: 90%;
+}
+
+.project-snippet-img {
+  width: 100%;
+  height: 500px;
+}
+.project-snippet img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.non-object-fit-cover img {
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+a.btn-next-box:link,
+a.btn-next-box:visited {
+  text-decoration: none;
+  color: #50719d;
+  font-size: 70%;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+a.btn-next-box:hover,
+a.btn-next-box:active {
+  color: #384bf7;
+}
+
+a.btn-next-box::after {
+  display: none;
+}
+/* ----------------------------------------------- */
+/* CLOSELI - MAIN */
 /* ----------------------------------------------- */
 /* ----- Intro-container-section ----- */
 .app-name {
@@ -394,12 +623,12 @@ a.next:hover {
 }
 
 a.prev {
-  content: url(assets/chevron-back-outline-white.svg);
+  content: url(../assets/chevron-back-outline-white.svg);
   left: 20px;
 }
 
 a.next {
-  content: url(assets/chevron-forward-outline-white.svg);
+  content: url(../assets/chevron-forward-outline-white.svg);
   right: 20px;
 }
 
@@ -530,6 +759,43 @@ a.next::after {
   margin-right: 24px;
 }
 
+/* ----------------------------------------------- */
+/* ABOUT - MAIN */
+/* ----------------------------------------------- */
+/* ----- Bio-section ----- */
+.about-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.about-container li:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.about-container h1 {
+  text-align: left;
+  font-size: 110%;
+  font-weight: 200;
+}
+
+/* .about-container p {
+  letter-spacing: 0;
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 38px;
+} */
+
+.about-container img {
+  width: 100%;
+}
+
+.about-container .row {
+  justify-content: center;
+}
+
+.about-bio {
+  margin-left: 80px;
+}
 /* ----------------------------------------------- */
 /* ASIDE */
 /* ----------------------------------------------- */

@@ -3,7 +3,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -12,10 +12,189 @@
         color: red;
       }
     </style>
+    <title>Dan home page</title>
   </head>
   <body>
-    <div>
-      <p class="logo">Hello world</p>
-    </div>
+    <header role="banner">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="logo-container">
+          <a href="home.html" class="logo-btn">
+            <img src="assets/logo-d.png" alt="Dan Liu logo" class="logo-img" />
+            <p class="logo-text">Dan Liu</p>
+          </a>
+        </div>
+        <div class="nav-mobile">
+          <a id="navbar-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-web">
+          <li>
+            <a lang="en" href="home.html" class="nav-lnk" id="home-lnk">Home</a>
+          </li>
+          <li>
+            <a lang="en" href="work.html" class="nav-lnk" id="work-lnk">Work</a>
+          </li>
+          <li>
+            <a lang="en" href="about.html" class="nav-lnk" id="about-lnk"
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Intro of Closeli -->
+      <section class="bio-intro-container" id="home">
+        <ul class="bio-intro">
+          <li class="list-style-none bio-logo">
+            <img src="assets/logo-d.svg" alt="Dan Liu logo" />
+          </li>
+
+          <li class="list-style-none bio-h1-container">
+            <div class="typewriter">
+              <h1 class="medium">
+                Hello, I am <span class="neon-blue">Dan</span>!
+              </h1>
+            </div>
+          </li>
+          <li class="list-style-none bio-h1-container">
+            <div class="typewriter">
+              <h1 class="medium chinese">
+                您好，我是 <span class="neon-blue">丹</span>!
+              </h1>
+            </div>
+          </li>
+          <li class="list-style-none">
+            <p>
+              I am a Boulder-based UX designer who loves to solve problems and
+              create well-designed things that help people.
+            </p>
+          </li>
+          <li class="list-style-none">
+            <p class="light">
+              I am actively looking for jobs in
+              <span class="medium">user experience research</span>,
+              <span class="medium">user experience design</span>, and
+              <span class="medium">accessibility</span>.
+            </p>
+          </li>
+          <li class="list-style-none">
+            <a class="btn-next-box" lang="en" href="work.html">
+              <ion-icon name="arrow-down-outline"></ion-icon>
+              <p>Click to view my work</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- 
+      <section class="work-container" id="work">
+        <section class="ux-work-container">
+          <h2>User Exprience (UX) Design</h2>
+          <div class="row">
+            <div class="one-second-col">
+              <a class="project-snippet-btn">
+                <ul class="project-snippet">
+                  <li class="list-style-none">
+                    <h3 class="medium">Closeli</h3>
+                    <span class="divider"></span>
+                    <p class="light project-year">2021</p>
+                  </li>
+                  <li class="list-style-none">
+                    <p class="light">
+                      Encourageing neighbors and friends within the same
+                      community to socialize together with safety measures
+                    </p>
+                  </li>
+                  <li class="list-style-none">
+                    <div class="row project-snippet-img">
+                      <img
+                        src="assets/prototype-collage.jpg"
+                        alt="Prototype collage of Closeli mobile app"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </a>
+            </div>
+
+            <div class="one-second-col">
+              <a class="project-snippet-btn">
+                <ul class="project-snippet">
+                  <li class="list-style-none">
+                    <h3 class="medium">Peerbots</h3>
+                    <span class="divider"></span>
+                    <p class="light project-year">Current</p>
+                  </li>
+                  <li class="list-style-none">
+                    <p class="light">
+                      Providing accessible socially assistive services and
+                      removing some social barriers associated with interacting
+                      directly with a therapist
+                    </p>
+                  </li>
+                  <li class="list-style-none">
+                    <div class="row project-snippet-img non-object-fit-cover">
+                      <img
+                        src="assets/peerbots-graphics/peerbots-controller-operation-prototype.png"
+                        alt="Prototype screenshot of Peerbots's controller interface"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section> -->
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/dan-liu-b44b1610a/"
+            class="footer-icon"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="mailto: dali2731@colorado.edu" class="footer-icon"
+            ><ion-icon name="mail-outline"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="tel:+7205441260" class="footer-icon"
+            ><ion-icon name="call-outline"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="light">Made with love by Dan Liu © 2021</p>
+    </footer>
+
+    <aside class="feedback-container">
+      <a href="mailto: dali2731@colorado.edu">
+        <p>
+          This website is currently undergoing updates to improve accessibility
+          and ensure a high-quality project showcase. If you have any feedback
+          or questions about the website, please click on this banner to email
+          me.
+        </p>
+      </a>
+    </aside>
+
+    <!-- ion-icon package -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
