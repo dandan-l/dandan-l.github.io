@@ -145,6 +145,11 @@ p {
   line-height: 38px;
 }
 
+figcaption {
+  margin-top: 16px;
+  color: #2a2a2a;
+}
+
 /* ----- LINKS ----- */
 a {
   color: #2a2a2a;
@@ -241,7 +246,7 @@ a:not(.logo-btn):hover::after {
 }
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 5px solid orange; /* The typwriter cursor */
+  border-right: 5px solid #ff5d00; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
@@ -275,7 +280,7 @@ a:not(.logo-btn):hover::after {
     border-color: transparent;
   }
   50% {
-    border-color: orange;
+    border-color: #ff5d00;
   }
 }
 @keyframes blink-caret {
@@ -284,7 +289,30 @@ a:not(.logo-btn):hover::after {
     border-color: transparent;
   }
   50% {
-    border-color: orange;
+    border-color: #ff5d00;
+  }
+}
+
+/* ----- MOVING X-AXIS EFFECT ----- */
+.moving {
+  animation: moving 4s infinite;
+  -webkit-animation: moving 4s infinite;
+}
+@-webkit-keyframes moving {
+  0% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(1px);
   }
 }
 
@@ -330,10 +358,29 @@ header .navbar {
   line-height: 0;
 }
 
+.full-bleed-img-container {
+  position: relative;
+}
+
+.full-bleed-img-container figcaption {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  background: #ffffffb3;
+  padding: 20px;
+  font-size: 80%;
+}
+
 .full-bleed-img {
   width: 100%;
 }
 
+.full-bleed-img_cropped {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 700px;
+}
 /* Breadcrump example code from: https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html */
 nav.breadcrumb {
   padding: 20px 80px;
@@ -364,7 +411,7 @@ nav.breadcrumb li + li::before {
 
 nav.breadcrumb a {
   font-weight: 200;
-  font-size: 90%;
+  font-size: 80%;
   color: #2a2a2a;
 }
 
@@ -382,23 +429,9 @@ nav.breadcrumb [aria-current="page"]:after {
 /* ----------------------------------------------- */
 /* HOME - MAIN */
 /* ----------------------------------------------- */
-/* ----- video-header-section ----- */
-/* .home-page-movie {
-  width: 100%;
-}
-
-.home-page-movie video {
-  display: block;
-  margin: 0 auto;
-} */
-
 .bio-logo img {
   width: 8%;
 }
-/* 
-.bio-intro-container {
-  margin-top: 50px;
-} */
 
 .bio-intro {
   text-align: center;
@@ -419,6 +452,28 @@ nav.breadcrumb [aria-current="page"]:after {
   justify-content: center;
 }
 
+a.btn-next-box:link,
+a.btn-next-box:visited {
+  text-decoration: none;
+  color: #ff5d00;
+  font-size: 70%;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+a.btn-next-box:hover,
+a.btn-next-box:active {
+  color: #384bf7;
+}
+
+a.btn-next-box::after {
+  display: none;
+}
+
+/* ----------------------------------------------- */
+/* WORK - MAIN */
+/* ----------------------------------------------- */
 .work-container h2 {
   margin-bottom: 36px;
 }
@@ -458,12 +513,14 @@ li p.project-year {
 .project-snippet-img {
   width: 100%;
   height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
 }
+
 .project-snippet img {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 12px;
 }
 
 .non-object-fit-cover img {
@@ -471,24 +528,16 @@ li p.project-year {
   object-fit: fill;
 }
 
-a.btn-next-box:link,
-a.btn-next-box:visited {
-  text-decoration: none;
-  color: #50719d;
-  font-size: 70%;
-  display: inline-block;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
+.csml-project-snippet-img {
+  position: relative;
 }
 
-a.btn-next-box:hover,
-a.btn-next-box:active {
-  color: #384bf7;
+.csml-project-snippet-img img{
+  position: absolute;
+  top: 0;
 }
 
-a.btn-next-box::after {
-  display: none;
-}
+
 /* ----------------------------------------------- */
 /* CLOSELI - MAIN */
 /* ----------------------------------------------- */
@@ -509,8 +558,8 @@ a.btn-next-box::after {
   margin-bottom: 80px;
 }
 
-.tools-col p:first-of-type,
-.roles-col p:first-of-type {
+.tools-col p:not(:last-of-type),
+.roles-col p:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
@@ -760,6 +809,55 @@ a.next::after {
 }
 
 /* ----------------------------------------------- */
+/* PEERBOTS - MAIN */
+/* ----------------------------------------------- */
+/* ----- Intro-container-section ----- */
+
+.logo-h1 {
+  width: 80%;
+}
+
+.screenreader-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.peerbots-prototype-overview-row .one-third-col {
+  margin-left: 80px;
+}
+
+.peerbots-prototype-overview-row img {
+  width: auto;
+  height: 690px;
+}
+
+.peerbots-draft-design-container li:not(:last-of-type) {
+  margin-bottom: 36px;
+}
+
+.peerbots-draft-design-container img {
+  width: 100%;
+}
+
+/* ----------------------------------------------- */
+/* POOFY - MAIN */
+/* ----------------------------------------------- */
+.poofy-app-name {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #3108f9;
+}
+
+.lnks-container li a {
+  letter-spacing: 0;
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 38px;
+}
+/* ----------------------------------------------- */
 /* ABOUT - MAIN */
 /* ----------------------------------------------- */
 /* ----- Bio-section ----- */
@@ -774,19 +872,13 @@ a.next::after {
 
 .about-container h1 {
   text-align: left;
-  font-size: 110%;
-  font-weight: 200;
+  font-weight: 600;
+    font-size: 200%;
 }
-
-/* .about-container p {
-  letter-spacing: 0;
-    font-weight: 400;
-    font-size: 120%;
-    line-height: 38px;
-} */
 
 .about-container img {
   width: 100%;
+  border-radius: 12px;
 }
 
 .about-container .row {
@@ -796,6 +888,67 @@ a.next::after {
 .about-bio {
   margin-left: 80px;
 }
+
+.about-bio p {
+  font-size: 85%;
+}
+
+/* ----- Button Hover arrow effect ----- */
+/* Code credit: https://codepen.io/ratinacage26/pen/NjNvBg?editors=1100 */
+a.btn-org {
+  border: none;
+  font-size: 90%;
+  color: #ff5d00 !important;
+  padding: 14px 21px;
+  border-radius: 12px;
+  transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background-color 300ms ease-out;
+  display: inline-block;
+  width: 100%;
+  min-width: 200px;
+  outline: none;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+a.btn-org:after {
+  display: none;
+}
+
+a.btn-org:hover {
+  background: #ff5d00;
+  background-color: #ff5d00 !important;
+  color: #fff !important;
+}
+
+.btn-org p {
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease-out;
+  will-change: transform;
+}
+
+.btn-org:hover p {
+  transform: translate3d(-1rem, 0, 0);
+}
+
+.btn-org ion-icon {
+  position: absolute;
+  width: 1.1em;
+  right: 0px;
+  opacity: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 300ms ease-out;
+  will-change: right, opacity;
+}
+
+.btn-org:hover ion-icon {
+  opacity: 1;
+  right: 30px;
+}
+
 /* ----------------------------------------------- */
 /* ASIDE */
 /* ----------------------------------------------- */
@@ -848,4 +1001,6 @@ footer a::after {
 
 footer ion-icon {
   font-size: 24px;
+}
+
 }

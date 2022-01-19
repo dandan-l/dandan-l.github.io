@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&Nunito:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendor-css/gallery-style.css" />
+    <link rel="stylesheet" href="vendor-css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo-d.png" />
+    <!-- to display favicon on Safari -->
+    <link
+      rel="mask-icon"
+      href="{{assets/logo-d.png}}/images/safari-pinned-tab.svg?v=M44lzPylqQ"
+      color="#fff"
+    />
+    <link rel="apple-touch-icon" href="assets/logo-d.png" />
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+    <title>Dan :poofy project page</title>
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="logo-container">
+          <a href="index.html" class="logo-btn">
+            <img src="assets/logo-d.png" alt="Dan Liu logo" class="logo-img" />
+            <p class="logo-text">Dan Liu</p>
+          </a>
+        </div>
+        <div class="nav-mobile">
+          <a id="navbar-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-web">
+          <li>
+            <a lang="en" href="index.html" class="nav-lnk" id="home-lnk"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a lang="en" href="work.html" class="nav-lnk" id="work-lnk">Work</a>
+          </li>
+          <li>
+            <a lang="en" href="about.html" class="nav-lnk" id="about-lnk"
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Breadcrump example code from: https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ol>
+          <li>
+            <a lang="en" href="index.html">Home</a>
+          </li>
+          <li>
+            <a lang="en" href="work.html">Work</a>
+          </li>
+          <li>
+            <a lang="en" href="poofy.html" aria-current="page">:poofy</a>
+          </li>
+        </ol>
+      </nav>
+
+      <video
+        controls="controls"
+        src="assets/poofy/poofy-website-video.mp4"
+        name=":Pooft website demo video"
+        autoplay="autoplay"
+        loop
+        muted
+        class="full-bleed-img"
+      >
+        :Pooft website demo video
+      </video>
+    </header>
+
+    <main>
+      <!-- Intro of Peerbots -->
+      <section class="intro-container">
+        <div class="row">
+          <div class="app-name-container one-fourth-col">
+            <h1 class="app-name poofy-app-name">:poofy</h1>
+          </div>
+          <div class="one-fourth-col">
+            <h2 class="intro-title">Duration</h2>
+            <p class="intro-duration intro-description">
+              March 2021 - March 2021
+            </p>
+            <p class="intro-description">36 hours</p>
+          </div>
+          <div class="one-fourth-col">
+            <h2 class="intro-title">Project Context</h2>
+            <p class="intro-context intro-description">
+              <a lang="en" href="https://t9hacks.org/home" target="_blank"
+                >T9Hacks</a
+              >
+              Hackathon
+            </p>
+          </div>
+          <div class="one-fourth-col tools-col">
+            <h2 class="intro-title">Tools Used</h2>
+            <p class="intro-tools intro-description">Figma</p>
+            <p class="intro-description">React.js</p>
+            <p class="intro-description">Youtube API</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-fourth-col"></div>
+          <div class="three-fourth-col roles-col">
+            <h2 class="intro-title">Roles</h2>
+            <p class="intro-roles intro-description">
+              Design: Brainstorm, Content design, User interface design, Digital
+              drawing
+            </p>
+            <p class="intro-description">
+              Programming: Responsive design, Music player (Youtube API), CSS
+              styling
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview-container bg-light-blue">
+        <div class="row">
+          <div class="one-fourth-col">
+            <h2>Overview</h2>
+          </div>
+          <div class="three-fourth-col">
+            <div class="problem-container">
+              <h3 class="bold">Inspiration</h3>
+              <p>
+                As two college students, we fully understand what burnout feels
+                like as well as FOMO. For this project, we were inspired by the
+                recent rise of the counter-FOMO phenomenon, JOMO (Joy of Missing
+                Out). We wanted to simplify the heavily commercialized notion of
+                “self-care” and remind everyone to prioritize themselves. No
+                social media or expensive splurges are required. We are just
+                here to spread love and positive energy✨.
+              </p>
+            </div>
+
+            <div class="solution-container">
+              <h3 class="bold">Solution</h3>
+              <p>
+                :poofy is a web experience with cozy, dreamy vibes to help you
+                wind down and embrace JOMO (Joy of Missing Out). It shows that
+                treating yourself can be as effortless as listening to some
+                chill lo-fi music and popping some poofy clouds. This project
+                was designed and developed by Linda (<a
+                  lang="en"
+                  href="https://linhsiders.com/index.html"
+                  target="_blank"
+                  >Linh</a
+                >
+                & Dan), 2 girls with similar interests and backgrounds. We like
+                to code, design, and work on fun projects. We believe in boba
+                and have the dream to make this world a better place 💕.
+              </p>
+            </div>
+
+            <div class="lnks-container">
+              <h3 class="bold">Links</h3>
+              <ul>
+                <li>
+                  <a
+                    lang="en"
+                    href="https://github.com/linhnguyen817/linda"
+                    target="_blank"
+                    >Project Github link</a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="https://vimeo.com/526883420?embedded=true&source=vimeo_logo&owner=136203541"
+                    target="_blank"
+                    >Project demo video Vimeo link</a
+                  >
+                </li>
+                <li>
+                  <a
+                    lang="en"
+                    href="https://devpost.com/software/linda-dprsu9"
+                    target="_blank"
+                    >Project Devpost link</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/dan-liu-b44b1610a/"
+            class="footer-icon"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="mailto: dali2731@colorado.edu" class="footer-icon"
+            ><ion-icon name="mail-outline"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="tel:+7205441260" class="footer-icon"
+            ><ion-icon name="call-outline"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="light">Made with love by Dan Liu © 2021</p>
+    </footer>
+
+    <aside class="feedback-container">
+      <a href="mailto: dali2731@colorado.edu">
+        <p>
+          This website is currently undergoing updates to improve accessibility
+          and ensure a high-quality project showcase. If you have any feedback
+          or questions about the website, please click on this banner to email
+          me.
+        </p>
+      </a>
+    </aside>
+
+    <!-- ion-icon package -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

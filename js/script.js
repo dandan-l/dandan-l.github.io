@@ -5,7 +5,7 @@ $(document).ready(function () {
   var url = window.location.href;
   var hash = window.location.hash;
 
-  // console.log(url);
+  console.log(url);
 
   // passes on every "a" tag
   $(".nav-web a").each(function () {
