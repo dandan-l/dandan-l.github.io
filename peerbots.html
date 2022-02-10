@@ -98,7 +98,7 @@
       </figure>
     </header>
 
-    <main>
+    <main class="peerbots-main">
       <!-- Intro of Peerbots -->
       <section class="intro-container">
         <div class="row">
@@ -142,12 +142,12 @@
             </p>
           </div>
         </div>
-        <div class="row work-process-row">
+        <!-- <div class="row work-process-row">
           <img
             src="assets/peerbots-graphics/peerbots-storyline.png"
             alt="Peerbots storyline"
           />
-        </div>
+        </div> -->
       </section>
 
       <section class="overview-container bg-light-blue">
@@ -207,7 +207,11 @@
         </div>
 
         <div class="row prototype-overview-row peerbots-prototype-overview-row">
-          <div class="two-third-col">
+          <img
+            src="assets/peerbots-graphics/peerbots-storyline.png"
+            alt="Peerbots storyline"
+          />
+          <!-- <div class="two-third-col">
             <figure>
               <img
                 src="assets/peerbots-graphics/peerbots-controller-operation-prototype.png"
@@ -226,45 +230,566 @@
               />
               <figcaption>New face interface - Figma prototype</figcaption>
             </figure>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="peerbots-og-design-container">
+        <div class="row draft-design-title">
+          <h2>Initial Design</h2>
+        </div>
+        <div class="row flex-wrap fst-impression-container">
+          <h3>1st Impression</h3>
+          <p>
+            I was introduced to the interface on the left when I started working
+            for Peerbots. The developer built the interface using generic Unity
+            UI components. Here is my first impression of this version of the
+            interface:
+          </p>
+        </div>
+        <ul>
+          <li class="row fst-impression-controller flex-wrap">
+            <div class="row interface-title">
+              <h4 class="fade-blue">Controller Interface</h4>
+            </div>
+
+            <div class="row">
+              <div class="three-fifth-col">
+                <figure>
+                  <img
+                    src="assets/peerbots-graphics/peerbots-initial-ipad-controller.png"
+                    alt="Peerbots ipad prototype operation screen - first version"
+                  />
+                  <figcaption>
+                    Original controller interface - Application screenshot
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="two-fifth-col">
+                <ul class="row testing-findings-container flex-wrap">
+                  <li
+                    class="testing-finding list-style-none pro-container-list"
+                  >
+                    <ul class="pro-container">
+                      <li class="list-style-none">
+                        <p class="neon-blue bold">Pros:</p>
+                      </li>
+                      <li>
+                        <p>Easy access to all content at once.</p>
+                      </li>
+                      <li>
+                        <p>Fast navigation with minimum clickings.</p>
+                      </li>
+                      <li>
+                        <p>Colorful and cute interface to attract children.</p>
+                      </li>
+                      <li>
+                        <p>Theme-matching robot style.</p>
+                      </li>
+                      <li>
+                        <p>
+                          Differentiation between operating spaces using two
+                          color schemes.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="testing-finding list-style-none con-container-list"
+                  >
+                    <ul class="con-container">
+                      <li class="list-style-none">
+                        <p class="dark-orange bold">Cons:</p>
+                      </li>
+                      <li>
+                        <p>Inaccessible color contrast for some components.</p>
+                      </li>
+                      <li>
+                        <p>Inconsistent stylings.</p>
+                      </li>
+                      <li>
+                        <p>Overwhelming amount of content.</p>
+                      </li>
+                      <li>
+                        <p>Unsure of what it is without explanation.</p>
+                      </li>
+                      <li>
+                        <p>Too little space for the final operation screen.</p>
+                      </li>
+                      <li>
+                        <p>Debug information is not hidden.</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="row fst-impression-face flex-wrap">
+            <div class="row interface-title">
+              <h4 class="fade-blue">Face Interface</h4>
+            </div>
+            <div class="row">
+              <div class="three-fifth-col">
+                <figure>
+                  <img
+                    src="assets/peerbots-graphics/peerbots-initial-phone-face.png"
+                    alt="Peerbots phone prototype home screen - first version"
+                  />
+                  <figcaption>
+                    Original face interface - Application screenshot
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="two-fifth-col">
+                <ul class="row testing-findings-container flex-wrap">
+                  <li
+                    class="testing-finding list-style-none pro-container-list"
+                  >
+                    <ul class="pro-container">
+                      <li class="list-style-none">
+                        <p class="neon-blue bold">Pros:</p>
+                      </li>
+                      <li>
+                        <p>Easy access to all content at once.</p>
+                      </li>
+                      <li>
+                        <p>Fast navigation with minimum clickings.</p>
+                      </li>
+                      <li>
+                        <p>Colorful and cute interface to attract children.</p>
+                      </li>
+                      <li>
+                        <p>Adorable robot cartoon.</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="testing-finding list-style-none con-container-list"
+                  >
+                    <ul class="con-container">
+                      <li class="list-style-none">
+                        <p class="dark-orange bold">Cons:</p>
+                      </li>
+                      <li>
+                        <p>Confusing data and instructions.</p>
+                      </li>
+                      <li>
+                        <p>Inconsistent stylings.</p>
+                      </li>
+                      <li>
+                        <p>The robot's face is covered.</p>
+                      </li>
+                      <li>
+                        <p>Debug information is not hidden.</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="peerbots-ui-design-container bg-light-blue">
+        <div class="row draft-design-title">
+          <h2>User Interface Design</h2>
+        </div>
+        <div class="row flex-wrap ui-goal-container">
+          <h3>Goal</h3>
+          <p>
+            For this phase, I worked with the developer to switch the color
+            scheme and upgrade the user interface. The goal for the phase is to
+            make the interface more readable and pleasant with minimum
+            development changes and time. Because of the time constraint, I
+            prioritized a few items to achieve for this phase. This design is
+            implemented on the application currently available on the
+            <a
+              lang="en"
+              target="_blank"
+              href="https://apps.apple.com/us/app/peerbots/id1520187900"
+              >App Store</a
+            >
+            and
+            <a
+              lang="en"
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=peerbots.app&hl=en_US&gl=US"
+              >Google Play Store</a
+            >:
+          </p>
+        </div>
+        <ul>
+          <li class="row ui-controller flex-wrap">
+            <div class="row interface-title">
+              <h4 class="fade-blue">Controller Interface</h4>
+            </div>
+
+            <div class="row">
+              <div class="three-fifth-col">
+                <figure>
+                  <img
+                    src="assets/peerbots-graphics/peerbots-reskin-controller.png"
+                    alt="Peerbots controller prototype operation screen - redesigned UI version"
+                  />
+                  <figcaption>
+                    Redesigned controller interface - Figma prototype screenshot
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="two-fifth-col">
+                <ul class="row testing-findings-container flex-wrap">
+                  <li
+                    class="testing-finding list-style-none pro-container-list"
+                  >
+                    <ul class="pro-container">
+                      <li class="list-style-none">
+                        <p class="neon-blue bold">Achieved:</p>
+                      </li>
+                      <li>
+                        <p>Removed debug tools and information.</p>
+                      </li>
+                      <li>
+                        <p>Used consistent styling on the entire interface.</p>
+                      </li>
+                      <li>
+                        <p>Regrouped components under the same categories.</p>
+                      </li>
+                      <li>
+                        <p>Rearranged panels to declutter the interface.</p>
+                      </li>
+                      <li>
+                        <p>Added annotation to some buttons.</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="testing-finding list-style-none con-container-list"
+                  >
+                    <ul class="con-container">
+                      <li class="list-style-none">
+                        <p class="dark-orange bold">To do:</p>
+                      </li>
+                      <li>
+                        <p>Choose more accessible colors.</p>
+                      </li>
+                      <li>
+                        <p>Replace technical terms with plain language.</p>
+                      </li>
+                      <li>
+                        <p>
+                          Hide unapplicable panels under certain connection
+                          modes.
+                        </p>
+                      </li>
+                      <li>
+                        <p>Rearrange buttons to increase spacing.</p>
+                      </li>
+                      <li>
+                        <p>Highlight selected components.</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="row ui-face flex-wrap">
+            <div class="row interface-title">
+              <h4 class="fade-blue">Face Interface</h4>
+            </div>
+            <div class="row">
+              <div class="three-fifth-col">
+                <figure>
+                  <img
+                    src="assets/peerbots-graphics/peerbots-reskin-face.png"
+                    alt="Peerbots face prototype operation screen - redesigned UI version"
+                  />
+                  <figcaption>
+                    Redesigned face interface - Figma prototype screenshot
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="two-fifth-col">
+                <ul class="row testing-findings-container flex-wrap">
+                  <li
+                    class="testing-finding list-style-none pro-container-list"
+                  >
+                    <ul class="pro-container">
+                      <li class="list-style-none">
+                        <p class="neon-blue bold">Achieved:</p>
+                      </li>
+                      <li>
+                        <p>Removed debug tools and information.</p>
+                      </li>
+                      <li>
+                        <p>Regrouped components under the same categories.</p>
+                      </li>
+                      <li>
+                        <p>
+                          Replaced some technical terms with plain language.
+                        </p>
+                      </li>
+                      <li>
+                        <p>Replaced button with a toggle switch.</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="testing-finding list-style-none con-container-list"
+                  >
+                    <ul class="con-container">
+                      <li class="list-style-none">
+                        <p class="dark-orange bold">To do:</p>
+                      </li>
+                      <li>
+                        <p>Choose more accessible colors.</p>
+                      </li>
+                      <li>
+                        <p>
+                          Match stylings with the one from the controller
+                          interface.
+                        </p>
+                      </li>
+                      <li>
+                        <p>Replace technical terms with plain language.</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="row ui-conclusion flex-wrap">
+          <h3>Result</h3>
+          <div class="row">
+            <div class="one-third-col">
+              <img
+                src="assets/peerbots-graphics/peerbots-reskin-controller-app.png"
+                alt="Peerbots controller application operation screen - redesigned UI version"
+              />
+            </div>
+            <ul class="two-third-col">
+              <li class="list-style-none">
+                <p>
+                  You may find that the actual application looks different from
+                  the Figma prototype. That's because:
+                </p>
+              </li>
+              <li>
+                <p>
+                  Unity, the development platform we use, had some development
+                  constraints.
+                </p>
+              </li>
+              <li>
+                <p>
+                  We can only prioritize the development of a few designs within
+                  a limited amount of time.
+                </p>
+              </li>
+              <li class="list-style-none">
+                <p>
+                  The final application is the product of what the developer and
+                  I agreed on based on our development capacity and time.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="draft-design-container peerbots-draft-design-container">
-        <div class="row draft-design-title">
-          <h2>Initial Design</h2>
+      <section class="peerbots-ux-design-container">
+        <div class="row">
+          <div class="one-seventh-col">
+            <h2>User Experience Design</h2>
+          </div>
+          <div class="two-third-col">
+            <div class="row">
+              <p>
+                After the user interface upgrade, we successfully got support
+                from our funding partner to improve the user experience with new
+                user flow and cloud service. Following this guideline and my
+                discussions with the developer and researchers, I created a
+                high-fidelity prototype on Figma with a new user flow. In this
+                design, user flow is more vertical which helps guide the user
+                through the navigation process. Using this prototype, I hosted 2
+                focus groups with a total of 5 therapists in 2 days. All
+                therapists were volunteers connected through our funding
+                partner. Some of them had experience conducting therapeutic
+                sessions with robots (including non-Peerbots products) before. I
+                selected a few design improvements I made based on the findings
+                we learned from the focus groups and development capacity.
+              </p>
+            </div>
+          </div>
         </div>
-        <ul>
-          <li class="row prototype-overview-row">
-            <div class="two-third-col">
-              <figure>
-                <img
-                  src="assets/peerbots-graphics/peerbots-initial-ipad-controller.png"
-                  alt="Peerbots ipad prototype operation screen - first version"
-                />
-                <figcaption>
-                  Original controller interface - Application screenshot
-                </figcaption>
-              </figure>
-            </div>
-            <div class="one-third-col"></div>
-          </li>
 
-          <li class="row prototype-overview-row">
-            <div class="two-third-col">
-              <figure>
-                <img
-                  src="assets/peerbots-graphics/peerbots-initial-phone-face.png"
-                  alt="Peerbots phone prototype home screen - first version"
-                />
-                <figcaption>
-                  Original face interface - Application screenshot
-                </figcaption>
-              </figure>
-            </div>
-            <div class="one-third-col"></div>
-          </li>
-        </ul>
+        <!-- 1st finding -->
+        <div class="row finding-summary">
+          <p class="finding">
+            Therapist: I had to use 2 devices to see the preview when authoring
+            content.
+          </p>
+        </div>
+        <div class="row finding-improvement">
+          <div class="three-fifth-col">
+            <img
+              src="assets/peerbots-graphics/peerbots-ux-controller-face-preview.png"
+              alt="Peerbots controller prototype operation screen - Face preview feature highlight"
+            />
+          </div>
+          <div class="two-fifth-col">
+            <p>
+              Some therapists couldn't author content with the controller device
+              stand-alone because they couldn't see the real-time feedback of
+              the robot face. This could be frustrating because they may not
+              have access to two smart devices. Based on this finding, I
+              <span class="bold"
+                >added a face preview panel on the controller side</span
+              >
+              so therapists can work on the content without having / pairing two
+              devices.
+            </p>
+
+            <p>
+              In addition, I also
+              <span class="bold"
+                >added facial expression icons on the buttons</span
+              >
+              so therapists can quickly identify the facial expressions
+              associated with each button. The icon is only available for
+              non-default options (tilt color and smiling face) to avoid
+              cluttering the interface.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2nd finding -->
+        <div class="row finding-summary">
+          <p class="finding">
+            Therapist: I am not sure how to finalize the changes I made to the
+            buttons.
+          </p>
+        </div>
+        <div class="row finding-improvement">
+          <div class="three-fifth-col">
+            <img
+              src="assets/peerbots-graphics/peerbots-ux-controller-save-changes.png"
+              alt="Peerbots controller prototype operation screen - Save changes feature highlight"
+            />
+          </div>
+          <div class="two-fifth-col">
+            <p>
+              Some therapists were uncertain about their changes to the buttons.
+              They found it unclear when and how the changes are finalized.
+              Based on this finding, I
+              <span class="bold">added the "Save" and "Revert" buttons</span> as
+              safety measures to confirm their changes. In this way, they have
+              complete control over the changes they desire, and their thoughts
+              won't be interrupted by the autosave.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3rd finding -->
+        <div class="row finding-summary">
+          <p class="finding">
+            Therapist: I am not sure what the connection is or how to connect.
+          </p>
+        </div>
+        <div class="row finding-improvement">
+          <div class="three-fifth-col">
+            <img
+              src="assets/peerbots-graphics/Peerbots-ux-controller-call.png"
+              alt="Peerbots controller prototype operation screen - Call devices feature highlight"
+            />
+          </div>
+          <div class="two-fifth-col">
+            <p>
+              Some therapists, especially non-tech-savvy therapists, had trouble
+              understanding the teleoperation process and how to pair the
+              devices. The connection process was strange and confusing,
+              especially without any explanation. To make this process more
+              intuitive, I decided to reframe the connection process and
+              <span class="bold">simulate the calling process</span> that people
+              are more familiar with. In this way, therapists can simply pair
+              devices by calling others' email addresses or web addresses.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4th finding -->
+        <div class="row finding-summary">
+          <p class="finding">
+            Therapist: I won't click on anything that I don't know about.
+          </p>
+        </div>
+        <div class="row finding-improvement">
+          <div class="three-fifth-col">
+            <img
+              src="assets/peerbots-graphics/peerbots-ux-controller-tutorial.png"
+              alt="Peerbots controller prototype operation screen - Tutorial feature highlight"
+            />
+          </div>
+          <div class="two-fifth-col">
+            <p>
+              Different from the generations that are more comfortable with
+              technology, therapists who have less exposure to technology
+              hesitated to explore the interface. Worrying about the consequence
+              of clicking on any buttons, some therapists don't like to click on
+              anything unless there is enough information about the button.
+              Based on this finding, I
+              <span class="bold">reworded some of the buttons</span> and
+              <span class="bold">created a series of tutorials</span> to give
+              further explanations of the product.
+            </p>
+          </div>
+        </div>
+
+        <!-- Development constraint -->
+        <div class="row constraint-summary">
+          <p class="finding">
+            Developer: We can't prioritize developing the drag and drop feature.
+          </p>
+        </div>
+        <div class="row constraint-improvement">
+          <div class="one-third-col">
+            <img
+              src="assets/peerbots-graphics/peerbots-ux-controller-swap1.png"
+              alt="Peerbots controller prototype operation screen - Swap feature 1"
+            />
+          </div>
+          <div class="one-third-col">
+            <img
+              src="assets/peerbots-graphics/peerbots-ux-controller-swap2.png"
+              alt="Peerbots controller prototype operation screen - Swap feature 2"
+            />
+          </div>
+          <div class="one-third-col">
+            <img
+              src="assets/peerbots-graphics/peerbots-ux-controller-swap3.png"
+              alt="Peerbots controller prototype operation screen - Swap feature 3"
+            />
+          </div>
+        </div>
+        <div class="row constraint-conclusion">
+          <p>
+            It's difficult for our sole developer to develop the drag and drop
+            feature on Unity within a short amount of time. After understanding
+            what is more practical to develop, I designed a 3 step swap feature.
+            Although swapping isn't as user-friendly as drag and drop, it makes
+            more sense to our current development capacity and project deadline.
+            However, as we continue improving the product, the drag and drop
+            feature will be the next feature we aim for.
+          </p>
+        </div>
       </section>
     </main>
 

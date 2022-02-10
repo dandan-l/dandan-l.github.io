@@ -5,7 +5,7 @@
 /* color guides */
 /*  background color: light blue - #e9f4fd, white - #fff;
     Main text color: dark grey - #2a2a2a
-    Large text color: baby blue - #50719D, neon blue - #384bf7, dark orange - #FF5D00, 
+    Large text color: fade blue - #50719D, neon blue - #384bf7, dark orange - #FF5D00, 
     Small text color: dark green - #137E68, dark pink - #C441A1, dark blue - #2A7EA8, yellow green - #53802F, dark red - #C92D39, 
     App name text color: baby blue - #719ed9, baby pink - #eeb1bf, baby blue - #f2cf66,
 */
@@ -100,11 +100,13 @@ section {
 }
 
 li {
-  list-style-position: inside;
+  list-style: disc inside;
 }
+
 .list-style-none {
   list-style: none;
 }
+
 /* ----- TEXTS ----- */
 .chinese {
   font-family: "Noto Sans SC", sans-serif;
@@ -200,6 +202,10 @@ a:not(.logo-btn):hover::after {
 
 .baby-yellow {
   color: #f2cf66;
+}
+
+.fade-blue {
+  color:#50719d;
 }
 
 .neon-blue {
@@ -813,6 +819,10 @@ a.next::after {
 /* ----------------------------------------------- */
 /* ----- Intro-container-section ----- */
 
+.peerbots-main .intro-container .row:nth-last-of-type(2){
+  margin-bottom: 36px;
+}
+
 .logo-h1 {
   width: 80%;
 }
@@ -826,23 +836,131 @@ a.next::after {
   overflow: hidden;
 }
 
-.peerbots-prototype-overview-row .one-third-col {
+
+/* ----- Peerbots-og-design-container-section ----- */
+
+/* .peerbots-prototype-overview-row .one-third-col {
   margin-left: 80px;
-}
+} */
 
 .peerbots-prototype-overview-row img {
-  width: auto;
-  height: 690px;
-}
-
-.peerbots-draft-design-container li:not(:last-of-type) {
-  margin-bottom: 36px;
-}
-
-.peerbots-draft-design-container img {
+  /* width: auto;
+  height: 690px; */
   width: 100%;
 }
 
+.fst-impression-controller,
+.fst-impression-face {
+  background: #e9f4fd;
+  margin-bottom: 24px;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: rgb(149 157 165 / 12%) 0px 8px 24px;;
+}
+
+.interface-title {
+  margin-bottom: 16px;
+}
+
+.peerbots-ui-design-container .three-fifth-col,
+.peerbots-og-design-container .three-fifth-col {
+  margin-right: 80px;
+}
+
+/* .peerbots-og-design-container li:not(:last-of-type) {
+  margin-bottom: 36px;
+} */
+
+.peerbots-ui-design-container .two-fifth-col li,
+.peerbots-og-design-container .two-fifth-col li{
+ margin-bottom: 0;
+ text-indent: -30px;
+ margin-left: 15px;
+}
+
+.pro-container-list:last-of-type,
+.con-container-list:last-of-type{
+margin-top: 24px;
+}
+
+.peerbots-og-design-container img {
+  width: 100%;
+}
+
+.ui-goal-container,
+.fst-impression-container {
+  margin-bottom: 16px;
+}
+
+
+/* ----- Peerbots-UI-design-container-section ----- */
+
+.peerbots-ui-design-container img {
+  width: 100%;
+}
+
+.ui-controller,
+.ui-face {
+  background: #ffffff;
+  margin-bottom: 24px;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: rgb(149 157 165 / 12%) 0px 8px 24px;;
+}
+
+.ui-conclusion {
+  margin-top: 36px;
+}
+
+.ui-conclusion li p {
+  display: inline;
+}
+
+.ui-conclusion .one-third-col {
+  margin-right: 80px;
+}
+
+
+/* ----- Peerbots-UX-design-container-section ----- */
+.peerbots-ux-design-container img {
+  width: 100%;
+}
+
+.peerbots-ux-design-container .finding-summary,
+.peerbots-ux-design-container .constraint-summary {
+  margin: 80px auto 36px;
+}
+
+.finding-summary p,
+.constraint-summary p {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 300%;
+  font-weight: 400;
+  color: #50719d;
+  text-align: center;
+  line-height: 80px;
+}
+
+.finding-improvement .three-fifth-col{
+  margin-right: 80px;
+}
+
+.finding-improvement .two-fifth-col p:first-of-type{
+  margin-bottom: 24px;
+}
+
+.constraint-summary p{
+  color: #c92d39;
+}
+
+.constraint-improvement .one-third-col:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+.constraint-conclusion {
+  margin-top: 36px;
+}
 /* ----------------------------------------------- */
 /* POOFY - MAIN */
 /* ----------------------------------------------- */
