@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendor-css/gallery-style.css" />
+    <link rel="stylesheet" href="vendor-css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo-d.png" />
+    <!-- to display favicon on Safari -->
+    <link
+      rel="mask-icon"
+      href="{{assets/logo-d.png}}/images/safari-pinned-tab.svg?v=M44lzPylqQ"
+      color="#fff"
+    />
+    <link rel="apple-touch-icon" href="assets/logo-d.png" />
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+    <title>Dan eFileMyForms checkout redesign Project Page</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1F926QCRJS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1F926QCRJS");
+    </script>
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="logo-container">
+          <a href="index.html" class="logo-btn">
+            <img src="assets/logo-d.png" alt="Dan Liu logo" class="logo-img" />
+            <p class="logo-text">Dan Liu</p>
+          </a>
+        </div>
+        <div class="nav-mobile">
+          <a id="navbar-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-web">
+          <li>
+            <a lang="en" href="index.html" class="nav-lnk" id="home-lnk"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a lang="en" href="work.html" class="nav-lnk" id="work-lnk">Work</a>
+          </li>
+          <li>
+            <a lang="en" href="about.html" class="nav-lnk" id="about-lnk"
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Breadcrump example code from: https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ol>
+          <li>
+            <a lang="en" href="index.html">Home</a>
+          </li>
+          <li>
+            <a lang="en" href="work.html">Work</a>
+          </li>
+          <li>
+            <a lang="en" href="efmf.html" aria-current="page"
+              >eFileMyForms checkout redesign</a
+            >
+          </li>
+        </ol>
+      </nav>
+
+      <figure class="full-bleed-img-container">
+        <img
+          src="assets/efmf-checkout/new-efmf-experience.svg"
+          alt="Screenshot of eFileMyForms' new experience announcement"
+          class="full-bleed-img_cropped"
+        />
+      </figure>
+    </header>
+
+    <main class="peerbots-main">
+      <!-- Intro of eFileMyForms -->
+      <section class="intro-container">
+        <div class="row">
+          <div class="app-name-container one-fourth-col">
+            <img
+              src="https://s41658.pcdn.co/wp-content/uploads/EFMF_Logo.svg"
+              alt="eFileMyForms logo"
+              class="logo-h1"
+            />
+            <h1 class="app-name screenreader-only" aria-hidden="true">
+              eFileMyForms
+            </h1>
+          </div>
+          <div class="one-fourth-col">
+            <h2 class="intro-title">Duration</h2>
+            <p class="intro-duration intro-description">
+              October 2022 - January 2023
+            </p>
+          </div>
+          <div class="one-fourth-col">
+            <h2 class="intro-title">Project Context</h2>
+            <p class="intro-context intro-description">
+              Product design at Sovos
+            </p>
+          </div>
+          <div class="one-fourth-col tools-col">
+            <h2 class="intro-title">Tools Used</h2>
+            <p class="intro-tools intro-description">Figma</p>
+            <p class="intro-description">Internal design system</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-fourth-col"></div>
+          <div class="three-fourth-col roles-col">
+            <h2 class="intro-title">Roles</h2>
+            <p class="intro-roles intro-description">
+              User experience design: Accessibility, Content design, Design
+              system, User flow, User interface design
+            </p>
+          </div>
+        </div>
+        <!-- <div class="row work-process-row">
+          <img
+            src="assets/peerbots-graphics/peerbots-storyline.png"
+            alt="Peerbots storyline"
+          />
+        </div> -->
+      </section>
+
+      <section class="overview-container bg-light-blue">
+        <div class="row">
+          <div class="one-fourth-col">
+            <h2>Overview</h2>
+          </div>
+          <div class="three-fourth-col">
+            <div class="problem-container">
+              <h3 class="bold">Background</h3>
+              <p>
+                <a lang="en" target="_blank" href="https://efilemyforms.com"
+                  >eFileMyForms</a
+                >, acquired by Sovos in 2021, is a web-based application for
+                individuals, businesses, and tax professionals to manage and
+                file tax forms timely and securely. Different from traditional
+                enterprise products from Sovos, eFileMyForms has non-traditional
+                business needs and audience groups. Instead of catering to the
+                needs of a large organization, eFileMyForms requires a solution
+                that is scalable and reliable for a large number of customers,
+                especially smaller businesses.
+              </p>
+            </div>
+
+            <div class="solution-container">
+              <h3 class="bold">Project Scope</h3>
+              <p>
+                For this project, the goal was to improve the checkout
+                experience and increase revenue by 15% through add-on services.
+                My role was to collaborate with Product Owner, developers, and
+                Quality Assurance engineers to deliver a streamlined checkout
+                experience using a modified design system that was more
+                consistent with the eFileMyForms branding. To meet the project
+                deadline before the January tax season, the focus was primarily
+                on CSS changes with minimal user experience enhancements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/dan-liu-b44b1610a/"
+            class="footer-icon"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="mailto: dali2731@colorado.edu" class="footer-icon"
+            ><ion-icon name="mail-outline"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="tel:+7205441260" class="footer-icon"
+            ><ion-icon name="call-outline"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="light">Made with ❤️ by Dan Liu © 2023</p>
+    </footer>
+
+    <aside class="feedback-container">
+      <a href="mailto: dali2731@colorado.edu">
+        <p>
+          This website is currently undergoing updates to improve accessibility
+          and ensure a high-quality project showcase. If you have any feedback
+          or questions about the website, please click on this banner to email
+          me.
+        </p>
+      </a>
+    </aside>
+
+    <!-- ion-icon package -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
